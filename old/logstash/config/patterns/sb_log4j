@@ -1,0 +1,11 @@
+log4j.appender.A1.layout.ConversionPattern=
+%-4r %-5p %X{user}@%X{webapp} [%-d{dd MMM yyyy HH:mm:ss}] %X{reqtimer} (%t) "%-10c" %x- %m%n
+
+log4j.appender.A1.layout.ConversionPattern=%-4r %-5p %X{user}@%X{webapp} [%-d{dd MMM yyyy HH:mm:ss}] %X{reqtimer} (%t) "%-10c" %x- %m%n
+
+
+NUMBER %-4r
+LOGLEVEL %-5p
+USER %X{user}
+HOSTNAME %X{webapp}
+COMBINEDAPACHELOG %X{reqtimer} (%t) "%-10c" %x- %m%n
